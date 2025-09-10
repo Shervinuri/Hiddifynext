@@ -1,25 +1,35 @@
-نام گردش کار که در تب Actions گیت‌هاب نمایش داده می‌شودname: Update Subscription Configson:اجرای خودکار هر 30 دقیقهschedule:- cron: '*/30 * * * *'امکان اجرای دستی از طریق تب Actions گیت‌هابworkflow_dispatch:jobs:update-configs:runs-on: ubuntu-lateststeps:# 1. کدهای ریپازیتوری را دانلود می‌کند- name: Checkout repositoryuses: actions/checkout@v4  # 2. پایتون را نصب و آماده‌سازی می‌کند
-  - name: Set up Python
-    uses: actions/setup-python@v5
-    with:
-      python-version: '3.10'
+name: Update Subscription Configs
 
-  # 3. کتابخانه‌های مورد نیاز پایتون را نصب می‌کند
-  - name: Install dependencies
-    run: |
-      python -m pip install --upgrade pip
-      pip install -r requirements.txt
+on:
+  schedule:
+    - cron: '*/30 * * * *'
+  workflow_dispatch:
 
-  # 4. اسکریپت پایتون را برای به‌روزرسانی کانفیگ‌ها اجرا می‌کند
-  - name: Run update script
-    run: python update_configs.py
+jobs:
+  update-configs:
+    runs-on: ubuntu-latest
 
-  # 5. تغییرات ایجاد شده در فایل Index.html را به ریپازیتوری کامیت و پوش می‌کند
-  - name: Commit and push changes
-    run: |
-      git config --global user.name 'github-actions[bot]'
-      git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-      git add Index.html
-      # فقط در صورتی کامیت می‌کند که تغییری وجود داشته باشد
-      git diff --staged --quiet || git commit -m "Automated config update"
-      git push
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run update script
+        run: python update_configs.py
+
+      - name: Commit and push changes
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add Index.html
+          git diff --staged --quiet || git commit -m "Automated config update"
+          git push
