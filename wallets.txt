@@ -1,0 +1,2 @@
+# Paste your Solana Private Keys here (one per line)
+# Format: Base58 string (e.g. 5M...) or JSON array (e.g. [1, 2, ...])
