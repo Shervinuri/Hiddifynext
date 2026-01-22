@@ -26,8 +26,9 @@ The script relies only on the standard library and the thirdâ€‘party
 
 import base64
 import pathlib
+import re
 import sys
-from typing import Iterable, List, Set
+from typing import Iterable, List
 
 import requests
 
@@ -44,6 +45,80 @@ SOURCES: List[str] = [
     # "https://raw.githubusercontent.com/MatinGhanbari/v2ray-configs/main/subscriptions/filtered/subs/vless.txt",
     # "https://raw.githubusercontent.com/MatinGhanbari/v2ray-configs/main/subscriptions/filtered/subs/trojan.txt",
 ]
+
+
+def _get_text_from_github_api(owner: str, repo: str, branch: str, path: str) -> str | None:
+    """Attempt to fetch a file via the GitHub API as a fallback.
+
+    GitHub's REST API can return raw file contents when the ``Accept`` header
+    includes ``application/vnd.github.v3.raw``.  This method is used when
+    direct access to ``raw.githubusercontent.com`` returns nonâ€‘200 status codes.
+
+    Parameters
+    ----------
+    owner: str
+        Repository owner (user or organization).
+    repo: str
+        Repository name.
+    branch: str
+        Branch or ref to fetch from.
+    path: str
+        Path to the file within the repository.
+
+    Returns
+    -------
+    Optional[str]
+        The file contents as a string if successful, otherwise ``None``.
+    """
+    api_url = f"https://api.github.com/repos/{owner}/{repo}/contents/{path}?ref={branch}"
+    headers = {
+        "Accept": "application/vnd.github.v3.raw",
+        # Set a generic Userâ€‘Agent to reduce likelihood of being blocked.
+        "User-Agent": "Mozilla/5.0 (compatible; V2RayConfigCollector/1.0)"
+    }
+    try:
+        resp = requests.get(api_url, headers=headers, timeout=30)
+        if resp.status_code == 200:
+            return resp.text
+    except Exception:
+        pass
+    return None
+
+
+def _download_with_fallback(url: str) -> str | None:
+    """Attempt to download a text file using multiple strategies.
+
+    The primary method is a direct GET request to ``url``.  If that
+    fails (nonâ€‘200 status), and the URL matches the pattern for raw
+    GitHub content, the function falls back to using the GitHub API to
+    retrieve the file content.
+
+    Parameters
+    ----------
+    url: str
+        The URL to fetch.
+
+    Returns
+    -------
+    Optional[str]
+        The downloaded text content, or ``None`` if all attempts fail.
+    """
+    headers = {
+        "User-Agent": "Mozilla/5.0 (compatible; V2RayConfigCollector/1.0)"
+    }
+    try:
+        resp = requests.get(url, headers=headers, timeout=30)
+        if resp.status_code == 200:
+            return resp.text
+    except Exception:
+        pass
+
+    # Attempt fallback via GitHub API if the URL is a raw GitHub link.
+    m = re.match(r"https://raw\.githubusercontent\.com/([^/]+)/([^/]+)/([^/]+)/(.+)", url)
+    if m:
+        owner, repo, branch, path = m.groups()
+        return _get_text_from_github_api(owner, repo, branch, path)
+    return None
 
 
 def fetch_source(url: str) -> Iterable[str]:
@@ -64,15 +139,12 @@ def fetch_source(url: str) -> Iterable[str]:
     Iterable[str]
         A collection of configuration strings extracted from the source.
     """
-    try:
-        resp = requests.get(url, timeout=30)
-        resp.raise_for_status()
-    except Exception as exc:
-        # If a source fails, log to stderr and skip it.
-        print(f"Warning: failed to fetch {url}: {exc}", file=sys.stderr)
+    text: str | None = _download_with_fallback(url)
+    if not text:
+        print(f"Warning: failed to fetch {url}", file=sys.stderr)
         return []
 
-    text = resp.text.strip()
+    text = text.strip()
 
     # Some subscription files are a single base64â€‘encoded blob containing
     # meta lines and configuration links.  Detect this by checking whether
