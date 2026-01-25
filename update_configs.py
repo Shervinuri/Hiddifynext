@@ -33,6 +33,7 @@ import re
 import socket
 import sys
 import urllib.parse
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from typing import Iterable, List, Optional, Tuple
 
 import requests
@@ -43,11 +44,9 @@ import requests
 # subscription (thousands of links) and a "super" subscription (a curated
 # subset).  Feel free to append new sources as needed.
 SOURCES: List[str] = [
-    "https://raw.githubusercontent.com/barry-far/V2ray-config/main/All_Configs_base64_Sub.txt",
+    "https://raw.githubusercontent.com/MatinGhanbari/v2ray-configs/main/subscriptions/v2ray/all_sub.txt",
     "https://raw.githubusercontent.com/MatinGhanbari/v2ray-configs/main/subscriptions/v2ray/super-sub.txt",
-    "https://raw.githubusercontent.com/MahsaNetConfigTopic/config/refs/heads/main/xray_final.txt",
-    "https://raw.githubusercontent.com/yebekhe/vpn-fail/refs/heads/main/sub-link.txt",
-    "https://raw.githubusercontent.com/arshiacomplus/v2rayExtractor/refs/heads/main/mix/sub.html",
+    # Additional sources can be added here.  For example, perâ€‘protocol lists:
     # "https://raw.githubusercontent.com/MatinGhanbari/v2ray-configs/main/subscriptions/filtered/subs/vmess.txt",
     # "https://raw.githubusercontent.com/MatinGhanbari/v2ray-configs/main/subscriptions/filtered/subs/vless.txt",
     # "https://raw.githubusercontent.com/MatinGhanbari/v2ray-configs/main/subscriptions/filtered/subs/trojan.txt",
@@ -189,9 +188,10 @@ def fetch_source(url: str) -> Iterable[str]:
 
 
 REMARK = "☬ SHΞN Ai✨ v2ray Miner"
-REDIRECT_SUBSCRIPTION_URL = "https://hiddify.netlify.app"
+REDIRECT_SUBSCRIPTION_URL = "https://1kb.link/o402sP"
 # Update the URL above to match your hosted subscription domain.
 DEFAULT_PROFILE_TITLE_BASE64 = "4pisU0jOnk7ihKI="
+HEALTH_CHECK_WORKERS = 40
 
 
 def _extract_profile_title_base64(meta_lines: Iterable[str]) -> str:
@@ -394,12 +394,26 @@ def main() -> None:
             normalized = normalize_config(config)
             if not normalized:
                 continue
-            if not is_healthy(normalized):
-                continue
             all_configs.append(normalized)
     if not all_configs:
         print("Warning: no configurations fetched from sources", file=sys.stderr)
-    update_index_file(index_path, meta, all_configs)
+        update_index_file(index_path, meta, [])
+        return
+
+    unique_configs = sorted(set(all_configs), key=lambda x: x.lower())
+    healthy_configs: List[str] = []
+    with ThreadPoolExecutor(max_workers=HEALTH_CHECK_WORKERS) as executor:
+        future_map = {executor.submit(is_healthy, config): config for config in unique_configs}
+        for future in as_completed(future_map):
+            config = future_map[future]
+            try:
+                if future.result():
+                    healthy_configs.append(config)
+            except Exception:
+                continue
+    if not healthy_configs:
+        print("Warning: no healthy configurations after checks", file=sys.stderr)
+    update_index_file(index_path, meta, healthy_configs)
 
 
 if __name__ == "__main__":
