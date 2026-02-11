@@ -30,23 +30,15 @@ import requests
 SOURCES = [
     # Your existing sources
     "https://raw.githubusercontent.com/barry-far/V2ray-config/main/All_Configs_base64_Sub.txt",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-
-    # Added: frequently refreshed, already “cleaned/working” lists (kept lightweight)
-    "https://raw.githubusercontent.com/ebrasha/free-v2ray-public-list/refs/heads/main/V2Ray-Config-By-EbraSha.txt",
-    "",
-    "",
+    "https://raw.githubusercontent.com/F0rc3Run/F0rc3Run/refs/heads/main/splitted-by-protocol/vmess.txt",
+    "https://raw.githubusercontent.com/F0rc3Run/F0rc3Run/refs/heads/main/splitted-by-protocol/vless.txt",
+    "https://raw.githubusercontent.com/nyeinkokoaung404/V2ray-Configs/main/All_Configs_Sub.txt",
 ]
 
 REMARK = "☬SHΞN™"
 
 # Keep this smaller to avoid phone lag (was 1000)
-MAX_OUTPUT = 450
+MAX_OUTPUT = 1000
 
 # Output files (overwritten every run)
 OUT_SUB = Path("subscription.txt")
