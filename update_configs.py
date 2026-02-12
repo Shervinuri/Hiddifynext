@@ -41,7 +41,7 @@ SOURCES = [
 
 # Custom remark tag: ensure order and encoding are correct
 # Note: using ASCII-only or properly ordered Unicode characters prevents garbled text in some clients.
-REMARK = "SHΞN™☬"
+REMARK = "☬SHΞN™"
 
 # Keep this smaller to avoid phone lag (was 1000)
 MAX_OUTPUT = 1000
