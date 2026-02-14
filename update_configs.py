@@ -14,10 +14,10 @@ import random
 
 # -------------------- user knobs --------------------
 SOURCES = [
-    "https://raw.githubusercontent.com/barry-far/V2ray-config/main/All_Configs_base64_Sub.txt",
-    "https://raw.githubusercontent.com/F0rc3Run/F0rc3Run/refs/heads/main/splitted-by-protocol/vmess.txt",
-    "https://raw.githubusercontent.com/F0rc3Run/F0rc3Run/refs/heads/main/splitted-by-protocol/vless.txt",
+    "https://v2.alicivil.workers.dev/?count=500&shuffle=true&mylinks=onfile-https%3A%2F%2Fraw.githubusercontent.com%2Fbarry-far%2FV2ray-config%2Fmain%2FAll_Configs_base64_Sub.txt&type=ws&protocol=vless%2Cvmess",
     "https://raw.githubusercontent.com/nyeinkokoaung404/V2ray-Configs/main/All_Configs_Sub.txt",
+    "",
+    "",
 ]
 
 REMARK = "☬SHΞЯVIN™"
