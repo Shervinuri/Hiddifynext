@@ -14,8 +14,8 @@ import random
 
 # -------------------- user knobs --------------------
 SOURCES = [
-    "https://v2.alicivil.workers.dev/?count=500&shuffle=true&mylinks=onfile-https%3A%2F%2Fraw.githubusercontent.com%2Fbarry-far%2FV2ray-config%2Fmain%2FAll_Configs_base64_Sub.txt&type=ws&protocol=vless%2Cvmess",
-    "https://raw.githubusercontent.com/nyeinkokoaung404/V2ray-Configs/main/All_Configs_Sub.txt",
+    "https://v2.alicivil.workers.dev/?count=2000&shuffle=true&type=ws&protocol=vless%2Cvmess",
+    "",
     "",
     "",
 ]
