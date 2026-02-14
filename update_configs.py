@@ -24,7 +24,7 @@ REMARK = "☬SHΞN™"
 MAX_OUTPUT = 1000
 
 OUT_SUB = Path("subscription.txt")
-OUT_INDEX = Path("Index.html")
+OUT_INDEX = Path("index.html")
 
 CONFIG_PATTERN = re.compile(r"(?:vmess|vless|hysteria2|hy2)://[^\s\"'<>]+", re.IGNORECASE)
 BASE64_PATTERN = re.compile(r"^[A-Za-z0-9+/=_-]+$")
