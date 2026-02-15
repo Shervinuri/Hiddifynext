@@ -6,6 +6,12 @@
 #profile-update-interval: 1
 #subscription-userinfo: upload=29; download=18; total=937418240000000; expire=2546249531
 #support-url: t.me/shervini
+vless://9c9a3dcd-8710-06a2-c417-aa6bb879dc5e@metrix1.taklady.com:47031?security=none&encryption=none&host=igap.net&headerType=http&type=tcp#%F0%9F%87%A9%F0%9F%87%AA%20%E2%98%ACSH%CE%9E%D0%AFVIN%E2%84%A2
+vless://9c9a3dcd-8710-06a2-c417-aa6bb879dc5e@metrix1.taklady.com:47033?security=none&encryption=none&host=igap.net&headerType=http&type=tcp#%F0%9F%87%BA%F0%9F%87%B8%20%E2%98%ACSH%CE%9E%D0%AFVIN%E2%84%A2
+vless://9c9a3dcd-8710-06a2-c417-aa6bb879dc5e@edge.aiteamplus.ir:10010?security=none&encryption=none&headerType=http&type=tcp#%F0%9F%87%A9%F0%9F%87%AA%20%E2%98%ACSH%CE%9E%D0%AFVIN%E2%84%A2
+vless://9c9a3dcd-8710-06a2-c417-aa6bb879dc5e@edge.aiteamplus.ir:10012?security=none&encryption=none&headerType=http&type=tcp#%F0%9F%87%BA%F0%9F%87%B8%20%E2%98%ACSH%CE%9E%D0%AFVIN%E2%84%A2
+vless://5ebbf6c6-ff8c-c8f7-4d26-400fdf9d19c8@edge.aiteamplus.ir:10012?security=none&encryption=none&host=play.google.com&headerType=http&type=tcp#%E2%98%ACSH%CE%9E%D0%AFVIN%E2%84%A2
+vless://5ebbf6c6-ff8c-c8f7-4d26-400fdf9d19c8@edge.aiteamplus.ir:10010?security=none&encryption=none&host=play.google.com&headerType=http&type=tcp#%E2%98%ACSH%CE%9E%D0%AFVIN%E2%84%A2
 
 vless://5ebbf6c6-ff8c-c8f7-4d26-400fdf9d19c8@edge.aiteamplus.ir:10010?encryption=&flow=&headerType=http&host=play.google.com&path=%2Fapi&type=tcp#%E2%98%ACSH%CE%9E%D0%AFVIN%E2%84%A2
 vless://5ebbf6c6-ff8c-c8f7-4d26-400fdf9d19c8@edge.aiteamplus.ir:10012?encryption=&flow=&headerType=http&host=play.google.com&path=%2Fapi&type=tcp#%E2%98%ACSH%CE%9E%D0%AFVIN%E2%84%A2
