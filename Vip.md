@@ -1,6 +1,9 @@
 vless://bdf97c06-ae1f-47e9-b47a-9d9ff47b5820@zone.al.velaro.ir:57790?encryption=none&flow=&headerType=http&host=skyroom.online&type=tcp#%E2%98%AC
 vless://5ebbf6c6-ff8c-c8f7-4d26-400fdf9d19c8@metrix1.taklady.com:47033?encryption=&flow=&headerType=http&host=igap.net&path=%2F&type=tcp#%E2%98%ACSH%CE%9EN%E2%84%A2%20%E2%9C%A8%20Hybrid
 vless://5ebbf6c6-ff8c-c8f7-4d26-400fdf9d19c8@edge.aiteamplus.ir:10012?encryption=&flow=&headerType=http&host=play.google.com&path=%2Fapi&type=tcp#%E2%98%ACSH%CE%9EN%E2%84%A2%20%E2%9C%A8%20Hybrid
+vless://bdf97c06-ae1f-47e9-b47a-9d9ff47b5820@zone.al.velaro.ir:57790?encryption=none&flow=&headerType=http&host=skyroom.online&type=tcp#%E2%98%AC
+
+vless://bdf97c06-ae1f-47e9-b47a-9d9ff47b5820@zone.sw.flicknet.ir:10601?encryption=none&flow=&headerType=http&host=skyroom.online&type=tcp#%E2%98%AC
 vless://5ebbf6c6-ff8c-c8f7-4d26-400fdf9d19c8@metrix1.taklady.com:47031?encryption=&flow=&headerType=http&host=igap.net&path=%2F&type=tcp#%E2%98%ACSH%CE%9EN%E2%84%A2%20%E2%9C%A8%20Hybrid
 vless://5ebbf6c6-ff8c-c8f7-4d26-400fdf9d19c8@edge.aiteamplus.ir:10010?encryption=&flow=&headerType=http&host=play.google.com&path=%2Fapi&type=tcp#%E2%98%ACSH%CE%9EN%E2%84%A2%20%E2%9C%A8%20Hybrid
 vless://5ebbf6c6-ff8c-c8f7-4d26-400fdf9d19c8@metrix1.taklady.com:47032?encryption=&flow=&headerType=http&host=igap.net&path=%2F&type=tcp#%E2%98%ACSH%CE%9EN%E2%84%A2%20%E2%9C%A8%20Hybrid
