@@ -14,8 +14,9 @@ import random
 
 # -------------------- user knobs --------------------
 SOURCES = [
+    
+    "https://raw.githubusercontent.com/Shervinuri/Hiddifynext/refs/heads/main/Cip.md",
     "https://v2.alicivil.workers.dev/?count=2000&shuffle=true&type=ws&protocol=vless%2Cvmess",
-    "",
     "",
     "",
 ]
