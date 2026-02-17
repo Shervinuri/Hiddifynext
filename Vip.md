@@ -6,185 +6,36 @@
 #profile-update-interval: 1
 #subscription-userinfo: upload=29; download=18; total=937418240000000; expire=2546249531
 #support-url: t.me/shervini
-vless://853d23ee-38c6-41bb-a51c-8aea6a25b0bd@tes1.api-tel.xyz:50855?encryption=none&flow=&fp=chrome&pbk=3iQ5QX52pIjouDXoPSfrQRvpqaOTqG26IJLctU7McAY&security=reality&sid=02&sni=ea.com&type=#%E2%98%ACSH%CE%9EN%E2%84%A2%20%E2%9C%A8%20Quantum%20
-vless://853d23ee-38c6-41bb-a51c-8aea6a25b0bd@tes1.api-tel.xyz:50855?encryption=none&flow=&fp=chrome&pbk=3iQ5QX52pIjouDXoPSfrQRvpqaOTqG26IJLctU7McAY&security=reality&sid=02&sni=ea.com&type=#%E2%98%ACSH%CE%9EN%E2%84%A2%20%E2%9C%A8%20Quantum%20
-vless://853d23ee-38c6-41bb-a51c-8aea6a25b0bd@tes1.api-tel.xyz:50855?encryption=none&flow=&fp=chrome&pbk=3iQ5QX52pIjouDXoPSfrQRvpqaOTqG26IJLctU7McAY&security=reality&sid=02&sni=ea.com&type=#%E2%98%ACSH%CE%9EN%E2%84%A2%20%E2%9C%A8%20Quantum%20
-vless://853d23ee-38c6-41bb-a51c-8aea6a25b0bd@tes1.api-tel.xyz:50855?encryption=none&flow=&fp=chrome&pbk=3iQ5QX52pIjouDXoPSfrQRvpqaOTqG26IJLctU7McAY&security=reality&sid=02&sni=ea.com&type=#%E2%98%ACSH%CE%9EN%E2%84%A2%20%E2%9C%A8%20Quantum%20
-vless://853d23ee-38c6-41bb-a51c-8aea6a25b0bd@tes1.api-tel.xyz:50855?encryption=none&flow=&fp=chrome&pbk=3iQ5QX52pIjouDXoPSfrQRvpqaOTqG26IJLctU7McAY&security=reality&sid=02&sni=ea.com&type=#%E2%98%ACSH%CE%9EN%E2%84%A2%20%E2%9C%A8%20Quantum%20
-vless://853d23ee-38c6-41bb-a51c-8aea6a25b0bd@tes1.api-tel.xyz:50855?encryption=none&flow=&fp=chrome&pbk=3iQ5QX52pIjouDXoPSfrQRvpqaOTqG26IJLctU7McAY&security=reality&sid=02&sni=ea.com&type=#%E2%98%ACSH%CE%9EN%E2%84%A2%20%E2%9C%A8%20Quantum%20
-{
-  "dns": {
-    "final": "dns-remote",
-    "independent_cache": true,
-    "rules": [
-      {
-        "domain": [
-          "tes1.api-tel.xyz",
-          "dns.google"
-        ],
-        "server": "dns-direct"
-      },
-      {
-        "action": "reject",
-        "clash_mode": "block"
-      },
-      {
-        "clash_mode": "direct",
-        "server": "dns-direct"
-      },
-      {
-        "clash_mode": "global",
-        "server": "dns-remote"
-      },
-      {
-        "disable_cache": true,
-        "inbound": [
-          "tun-in"
-        ],
-        "query_type": [
-          "A",
-          "AAAA"
-        ],
-        "server": "dns-fake"
-      }
-    ],
-    "servers": [
-      {
-        "detour": "☬SHΞN™ ✨ Quantum ",
-        "domain_resolver": {
-          "server": "dns-direct"
-        },
-        "server": "dns.google",
-        "tag": "dns-remote",
-        "type": "tcp"
-      },
-      {
-        "tag": "dns-direct",
-        "type": "local"
-      },
-      {
-        "tag": "dns-local",
-        "type": "local"
-      },
-      {
-        "inet4_range": "198.51.100.0/24",
-        "inet6_range": "2001:2::/48",
-        "tag": "dns-fake",
-        "type": "fakeip"
-      }
-    ]
-  },
-  "experimental": {
-    "cache_file": {
-      "enabled": true,
-      "path": "../cache/cache.db",
-      "store_fakeip": true
-    }
-  },
-  "inbounds": [
-    {
-      "address": [
-        "172.19.0.1/28",
-        "fdfe:dcba:9876::1/126"
-      ],
-      "mtu": 9000,
-      "stack": "mixed",
-      "tag": "tun-in",
-      "type": "tun"
-    },
-    {
-      "listen": "0.0.0.0",
-      "listen_port": 2080,
-      "tag": "mixed-in",
-      "type": "mixed"
-    }
-  ],
-  "log": {
-    "level": "panic"
-  },
-  "outbounds": [
-    {
-      "server": "tes1.api-tel.xyz",
-      "server_port": 50855,
-      "tls": {
-        "enabled": true,
-        "reality": {
-          "enabled": true,
-          "public_key": "3iQ5QX52pIjouDXoPSfrQRvpqaOTqG26IJLctU7McAY",
-          "short_id": "02"
-        },
-        "server_name": "ea.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "uuid": "853d23ee-38c6-41bb-a51c-8aea6a25b0bd",
-      "type": "vless",
-      "network_type": [
-        "cellular"
-      ],
-      "network_strategy": "default",
-      "domain_resolver": {
-        "server": "dns-direct"
-      },
-      "tag": "☬SHΞN™ ✨ Quantum "
-    },
-    {
-      "domain_resolver": {
-        "server": "dns-direct"
-      },
-      "network_strategy": "default",
-      "network_type": [
-        "cellular"
-      ],
-      "tag": "direct",
-      "type": "direct"
-    },
-    {
-      "tag": "block",
-      "type": "block"
-    }
-  ],
-  "route": {
-    "auto_detect_interface": true,
-    "final": "☬SHΞN™ ✨ Quantum ",
-    "rules": [
-      {
-        "action": "hijack-dns",
-        "ip_cidr": [
-          "172.19.0.2",
-          "fdfe:dcba:9876::2"
-        ]
-      },
-      {
-        "action": "reject",
-        "clash_mode": "block"
-      },
-      {
-        "clash_mode": "direct",
-        "outbound": "direct"
-      },
-      {
-        "clash_mode": "global",
-        "outbound": "☬SHΞN™ ✨ Quantum "
-      },
-      {
-        "action": "sniff"
-      },
-      {
-        "action": "hijack-dns",
-        "protocol": [
-          "dns"
-        ]
-      },
-      {
-        "action": "route",
-        "network": [
-          "icmp"
-        ],
-        "outbound": "direct"
-      }
-    ]
-  }
-}
+vless://6fd9f786-d974-49d0-b5c4-397678de69a2@185.214.74.211:443?encryption=none&flow=xtls-rprx-vision&fp=chrome&pbk=BhTJ3phnq-Z-10aFKSsj1lzhA8mULR4L6leE4-0WTAs&security=reality&sid=&sni=www.cybo.com&type=#%E2%98%ACSH%CE%9EN%E2%84%A2%E2%9C%A8Quantum
+vless://fe665bb7-a558-42bc-9ba7-a59288ee4b93@104.26.12.31:80?encryption=none&flow=&host=floral-term-d21f.wafajax493.workers.dev&path=%2F&type=ws#%E2%98%ACSH%CE%9EN%E2%84%A2%E2%9C%A8Quantum
+vless://6fd9f786-d974-49d0-b5c4-397678de69a2@185.214.74.211:443?encryption=none&flow=xtls-rprx-vision&fp=chrome&pbk=BhTJ3phnq-Z-10aFKSsj1lzhA8mULR4L6leE4-0WTAs&security=reality&sid=&sni=www.cybo.com&type=#%E2%98%ACSH%CE%9EN%E2%84%A2%E2%9C%A8Quantum
+vless://fa-397456379-1771228824034392@185.120.59.245:443?encryption=none&flow=xtls-rprx-vision&fp=chrome&pbk=2rjzbqQ49m-jpfzhiuBNb8Izwwjw0dIg5JAKdv-B2kE&security=reality&sid=d1d42381ba35&sni=apple.com&type=#%E2%98%ACSH%CE%9EN%E2%84%A2%E2%9C%A8Quantum
+vless://4307e484-6c8b-46d0-9df4-8b3983ab27b4@173.245.59.244:8080?encryption=none&flow=&host=029.electrocellco-cf-029.workers.dev&path=%2FeyJqdW5rIjoiZUZpQ3M1WlYxYjlJTHlXNSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbIjc3LjIzOC4yMzEuMTc5IiwiMzEuNDQuMi41NyJdfQ%3D%3D%3Fed%3D2560&type=ws#%E2%98%ACSH%CE%9EN%E2%84%A2%E2%9C%A8Quantum
+vless://4307e484-6c8b-46d0-9df4-8b3983ab27b4@198.41.193.151:80?encryption=none&flow=&host=029.electrocellco-cf-029.workers.dev&path=%2FeyJqdW5rIjoibWNPczJHelJTUmpXIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOlsiNzcuMjM4LjIzMS4xNzkiLCIzMS40NC4yLjU3Il19%3Fed%3D2560&type=ws#%E2%98%ACSH%CE%9EN%E2%84%A2%E2%9C%A8Quantum
+vless://4307e484-6c8b-46d0-9df4-8b3983ab27b4@188.114.97.222:8080?encryption=none&flow=&host=029.electrocellco-cf-029.workers.dev&path=%2FeyJqdW5rIjoiTzZZQ2dpUW1WIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOlsiNzcuMjM4LjIzMS4xNzkiLCIzMS40NC4yLjU3Il19%3Fed%3D2560&type=ws#%E2%98%ACSH%CE%9EN%E2%84%A2%E2%9C%A8Quantum
+vless://f929cc78-e2a1-4ce3-8051-3e9538405144@104.17.15.87:80?encryption=none&flow=&host=britain.xydcqd.workers.dev&path=%2F%40wirexnet%3Fed%3D2048&type=ws#%E2%98%ACSH%CE%9EN%E2%84%A2%E2%9C%A8Quantum
+vless://4c765647-bc2e-456c-8ac0-47a5e45c9fad@[::ffff:26f2:eae4]:80?encryption=none&flow=&host=.....jorjina.1q2w3e4r5t6y7u8i9o0p1a2s3d4f5g6h7j8k9l01z2x3c4v5b6n7m8goot.store......&path=%2FeyJqdW5rIjoiNDBNWGY3Z0NPd0loZ2YiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119%3Fed%3D2560&type=ws#%E2%98%ACSH%CE%9EN%E2%84%A2%E2%9C%A8Quantum
+vless://73d17f62-d0c0-4c90-903c-a2b3f3806cca@104.19.151.106:80?encryption=none&flow=&host=fragrant-tooth-a5b7.cajeba6448.workers.dev&path=%2F%3Fed%3D2048%23TELEGRAM-anotherme_night---%23TELEGRAM-anotherme_night---%23TELEGRAM-anotherme_night---%23TELEGRAM-anotherme_night---%23TELEGRAM-anotherme_night&type=ws#%E2%98%ACSH%CE%9EN%E2%84%A2%E2%9C%A8Quantum
+vless://dd0cfef0-fda9-47ec-8a65-49d7bc004f82@104.21.18.41:443?alpn=http%2F1.1&encryption=none&flow=&fp=chrome&host=mitivpn-2.nic3-1.workers.dev&path=%2F--Telegram---%40MiTiVPN%2F---%40MiTiVPN&security=tls&sni=nic3-1.workers.dev&type=ws#%E2%98%ACSH%CE%9EN%E2%84%A2%E2%9C%A8Quantum%20
+vless://6fd9f786-d974-49d0-b5c4-397678de69a2@185.214.74.211:443?encryption=none&flow=xtls-rprx-vision&fp=chrome&pbk=BhTJ3phnq-Z-10aFKSsj1lzhA8mULR4L6leE4-0WTAs&security=reality&sid=&sni=www.cybo.com&type=#%E2%98%ACSH%CE%9EN%E2%84%A2%E2%9C%A8Quantum
+vless://fe665bb7-a558-42bc-9ba7-a59288ee4b93@104.26.12.31:80?encryption=none&flow=&host=floral-term-d21f.wafajax493.workers.dev&path=%2F&type=ws#%E2%98%ACSH%CE%9EN%E2%84%A2%E2%9C%A8Quantum
+vless://6fd9f786-d974-49d0-b5c4-397678de69a2@185.214.74.211:443?encryption=none&flow=xtls-rprx-vision&fp=chrome&pbk=BhTJ3phnq-Z-10aFKSsj1lzhA8mULR4L6leE4-0WTAs&security=reality&sid=&sni=www.cybo.com&type=#%E2%98%ACSH%CE%9EN%E2%84%A2%E2%9C%A8Quantum
+vless://fa-397456379-1771228824034392@185.120.59.245:443?encryption=none&flow=xtls-rprx-vision&fp=chrome&pbk=2rjzbqQ49m-jpfzhiuBNb8Izwwjw0dIg5JAKdv-B2kE&security=reality&sid=d1d42381ba35&sni=apple.com&type=#%E2%98%ACSH%CE%9EN%E2%84%A2%E2%9C%A8Quantum
+vless://4307e484-6c8b-46d0-9df4-8b3983ab27b4@173.245.59.244:8080?encryption=none&flow=&host=029.electrocellco-cf-029.workers.dev&path=%2FeyJqdW5rIjoiZUZpQ3M1WlYxYjlJTHlXNSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbIjc3LjIzOC4yMzEuMTc5IiwiMzEuNDQuMi41NyJdfQ%3D%3D%3Fed%3D2560&type=ws#%E2%98%ACSH%CE%9EN%E2%84%A2%E2%9C%A8Quantum
+vless://4307e484-6c8b-46d0-9df4-8b3983ab27b4@198.41.193.151:80?encryption=none&flow=&host=029.electrocellco-cf-029.workers.dev&path=%2FeyJqdW5rIjoibWNPczJHelJTUmpXIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOlsiNzcuMjM4LjIzMS4xNzkiLCIzMS40NC4yLjU3Il19%3Fed%3D2560&type=ws#%E2%98%ACSH%CE%9EN%E2%84%A2%E2%9C%A8Quantum
+vless://4307e484-6c8b-46d0-9df4-8b3983ab27b4@188.114.97.222:8080?encryption=none&flow=&host=029.electrocellco-cf-029.workers.dev&path=%2FeyJqdW5rIjoiTzZZQ2dpUW1WIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOlsiNzcuMjM4LjIzMS4xNzkiLCIzMS40NC4yLjU3Il19%3Fed%3D2560&type=ws#%E2%98%ACSH%CE%9EN%E2%84%A2%E2%9C%A8Quantum
+vless://f929cc78-e2a1-4ce3-8051-3e9538405144@104.17.15.87:80?encryption=none&flow=&host=britain.xydcqd.workers.dev&path=%2F%40wirexnet%3Fed%3D2048&type=ws#%E2%98%ACSH%CE%9EN%E2%84%A2%E2%9C%A8Quantum
+vless://4c765647-bc2e-456c-8ac0-47a5e45c9fad@[::ffff:26f2:eae4]:80?encryption=none&flow=&host=.....jorjina.1q2w3e4r5t6y7u8i9o0p1a2s3d4f5g6h7j8k9l01z2x3c4v5b6n7m8goot.store......&path=%2FeyJqdW5rIjoiNDBNWGY3Z0NPd0loZ2YiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119%3Fed%3D2560&type=ws#%E2%98%ACSH%CE%9EN%E2%84%A2%E2%9C%A8Quantum
+vless://73d17f62-d0c0-4c90-903c-a2b3f3806cca@104.19.151.106:80?encryption=none&flow=&host=fragrant-tooth-a5b7.cajeba6448.workers.dev&path=%2F%3Fed%3D2048%23TELEGRAM-anotherme_night---%23TELEGRAM-anotherme_night---%23TELEGRAM-anotherme_night---%23TELEGRAM-anotherme_night---%23TELEGRAM-anotherme_night&type=ws#%E2%98%ACSH%CE%9EN%E2%84%A2%E2%9C%A8Quantum
+vless://dd0cfef0-fda9-47ec-8a65-49d7bc004f82@104.21.18.41:443?alpn=http%2F1.1&encryption=none&flow=&fp=chrome&host=mitivpn-2.nic3-1.workers.dev&path=%2F--Telegram---%40MiTiVPN%2F---%40MiTiVPN&security=tls&sni=nic3-1.workers.dev&type=ws#%E2%98%ACSH%CE%9EN%E2%84%A2%E2%9C%A8Quantum%20
+vless://6fd9f786-d974-49d0-b5c4-397678de69a2@185.214.74.211:443?encryption=none&flow=xtls-rprx-vision&fp=chrome&pbk=BhTJ3phnq-Z-10aFKSsj1lzhA8mULR4L6leE4-0WTAs&security=reality&sid=&sni=www.cybo.com&type=#%E2%98%ACSH%CE%9EN%E2%84%A2%E2%9C%A8Quantum
+vless://fe665bb7-a558-42bc-9ba7-a59288ee4b93@104.26.12.31:80?encryption=none&flow=&host=floral-term-d21f.wafajax493.workers.dev&path=%2F&type=ws#%E2%98%ACSH%CE%9EN%E2%84%A2%E2%9C%A8Quantum
+vless://6fd9f786-d974-49d0-b5c4-397678de69a2@185.214.74.211:443?encryption=none&flow=xtls-rprx-vision&fp=chrome&pbk=BhTJ3phnq-Z-10aFKSsj1lzhA8mULR4L6leE4-0WTAs&security=reality&sid=&sni=www.cybo.com&type=#%E2%98%ACSH%CE%9EN%E2%84%A2%E2%9C%A8Quantum
+vless://fa-397456379-1771228824034392@185.120.59.245:443?encryption=none&flow=xtls-rprx-vision&fp=chrome&pbk=2rjzbqQ49m-jpfzhiuBNb8Izwwjw0dIg5JAKdv-B2kE&security=reality&sid=d1d42381ba35&sni=apple.com&type=#%E2%98%ACSH%CE%9EN%E2%84%A2%E2%9C%A8Quantum
+vless://4307e484-6c8b-46d0-9df4-8b3983ab27b4@173.245.59.244:8080?encryption=none&flow=&host=029.electrocellco-cf-029.workers.dev&path=%2FeyJqdW5rIjoiZUZpQ3M1WlYxYjlJTHlXNSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbIjc3LjIzOC4yMzEuMTc5IiwiMzEuNDQuMi41NyJdfQ%3D%3D%3Fed%3D2560&type=ws#%E2%98%ACSH%CE%9EN%E2%84%A2%E2%9C%A8Quantum
+vless://4307e484-6c8b-46d0-9df4-8b3983ab27b4@198.41.193.151:80?encryption=none&flow=&host=029.electrocellco-cf-029.workers.dev&path=%2FeyJqdW5rIjoibWNPczJHelJTUmpXIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOlsiNzcuMjM4LjIzMS4xNzkiLCIzMS40NC4yLjU3Il19%3Fed%3D2560&type=ws#%E2%98%ACSH%CE%9EN%E2%84%A2%E2%9C%A8Quantum
+vless://4307e484-6c8b-46d0-9df4-8b3983ab27b4@188.114.97.222:8080?encryption=none&flow=&host=029.electrocellco-cf-029.workers.dev&path=%2FeyJqdW5rIjoiTzZZQ2dpUW1WIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOlsiNzcuMjM4LjIzMS4xNzkiLCIzMS40NC4yLjU3Il19%3Fed%3D2560&type=ws#%E2%98%ACSH%CE%9EN%E2%84%A2%E2%9C%A8Quantum
+vless://f929cc78-e2a1-4ce3-8051-3e9538405144@104.17.15.87:80?encryption=none&flow=&host=britain.xydcqd.workers.dev&path=%2F%40wirexnet%3Fed%3D2048&type=ws#%E2%98%ACSH%CE%9EN%E2%84%A2%E2%9C%A8Quantum
+vless://4c765647-bc2e-456c-8ac0-47a5e45c9fad@[::ffff:26f2:eae4]:80?encryption=none&flow=&host=.....jorjina.1q2w3e4r5t6y7u8i9o0p1a2s3d4f5g6h7j8k9l01z2x3c4v5b6n7m8goot.store......&path=%2FeyJqdW5rIjoiNDBNWGY3Z0NPd0loZ2YiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119%3Fed%3D2560&type=ws#%E2%98%ACSH%CE%9EN%E2%84%A2%E2%9C%A8Quantum
+vless://73d17f62-d0c0-4c90-903c-a2b3f3806cca@104.19.151.106:80?encryption=none&flow=&host=fragrant-tooth-a5b7.cajeba6448.workers.dev&path=%2F%3Fed%3D2048%23TELEGRAM-anotherme_night---%23TELEGRAM-anotherme_night---%23TELEGRAM-anotherme_night---%23TELEGRAM-anotherme_night---%23TELEGRAM-anotherme_night&type=ws#%E2%98%ACSH%CE%9EN%E2%84%A2%E2%9C%A8Quantum
+vless://dd0cfef0-fda9-47ec-8a65-49d7bc004f82@104.21.18.41:443?alpn=http%2F1.1&encryption=none&flow=&fp=chrome&host=mitivpn-2.nic3-1.workers.dev&path=%2F--Telegram---%40MiTiVPN%2F---%40MiTiVPN&security=tls&sni=nic3-1.workers.dev&type=ws#%E2%98%ACSH%CE%9EN%E2%84%A2%E2%9C%A8Quantum%20
