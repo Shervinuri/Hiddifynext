@@ -1,1 +1,252 @@
-data:application/json;base64,ewogICJ2ZXJzaW9uIjogIjEuOC4wIiwKICAibG9nIjogewogICAgImxldmVsIjogIndhcm5pbmciLAogICAgInRpbWVzdGFtcCI6IHRydWUKICB9LAogICJkbnMiOiB7CiAgICAic2VydmVycyI6IFsKICAgICAgewogICAgICAgICJ0YWciOiAiZ29vZ2xlIiwKICAgICAgICAiYWRkcmVzcyI6ICJodHRwczovL2Rucy5nb29nbGUvZG5zLXF1ZXJ5IgogICAgICB9LAogICAgICB7CiAgICAgICAgInRhZyI6ICJjbG91ZGZsYXJlIiwKICAgICAgICAiYWRkcmVzcyI6ICJodHRwczovLzEuMS4xLjEvZG5zLXF1ZXJ5IgogICAgICB9LAogICAgICB7CiAgICAgICAgInRhZyI6ICJsb2NhbCIsCiAgICAgICAgImFkZHJlc3MiOiAiMTc4LjIyLjIyMi4yMjIiLAogICAgICAgICJkZXRvdXIiOiAiZGlyZWN0IgogICAgICB9CiAgICBdLAogICAgInJ1bGVzIjogWwogICAgICB7CiAgICAgICAgIm91dGJvdW5kIjogImFueSIsCiAgICAgICAgInNlcnZlciI6ICJsb2NhbCIKICAgICAgfQogICAgXSwKICAgICJzdHJhdGVneSI6ICJwcmVmZXJfaXB2NCIKICB9LAogICJpbmJvdW5kcyI6IFsKICAgIHsKICAgICAgInR5cGUiOiAidHVuIiwKICAgICAgInRhZyI6ICJ0dW4taW4iLAogICAgICAiaW50ZXJmYWNlX25hbWUiOiAidHVuMCIsCiAgICAgICJpbmV0NF9hZGRyZXNzIjogIjE3Mi4xOS4wLjEvMzAiLAogICAgICAiYXV0b19yb3V0ZSI6IHRydWUsCiAgICAgICJzdHJpY3Rfcm91dGUiOiB0cnVlLAogICAgICAic3RhY2siOiAic3lzdGVtIiwKICAgICAgInNuaWZmIjogdHJ1ZSwKICAgICAgInNuaWZmX292ZXJyaWRlX2Rlc3RpbmF0aW9uIjogdHJ1ZQogICAgfSwKICAgIHsKICAgICAgInR5cGUiOiAibWl4ZWQiLAogICAgICAidGFnIjogIm1peGVkLWluIiwKICAgICAgImxpc3RlbiI6ICIxMjcuMC4wLjEiLAogICAgICAibGlzdGVuX3BvcnQiOiAxMDgwLAogICAgICAic25pZmYiOiB0cnVlLAogICAgICAic25pZmZfb3ZlcnJpZGVfZGVzdGluYXRpb24iOiB0cnVlCiAgICB9CiAgXSwKICAib3V0Ym91bmRzIjogWwogICAgewogICAgICAidHlwZSI6ICJ2bGVzcyIsCiAgICAgICJ0YWciOiAiSVJBTi0xIiwKICAgICAgInNlcnZlciI6ICI5NC4xODIuMTAxLjExMyIsCiAgICAgICJzZXJ2ZXJfcG9ydCI6IDg0NDMsCiAgICAgICJ1dWlkIjogImIyYTMyZjQ2LTJiNmEtNGQxYi1iYWQwLTliMWM1YzBkY2I2MSIsCiAgICAgICJmbG93IjogIiIsCiAgICAgICJwYWNrZXRfZW5jb2RpbmciOiAieHVkcCIsCiAgICAgICJ0bHMiOiB7CiAgICAgICAgImVuYWJsZWQiOiBmYWxzZQogICAgICB9LAogICAgICAidHJhbnNwb3J0IjogewogICAgICAgICJ0eXBlIjogImh0dHAiLAogICAgICAgICJob3N0IjogWyI5NC4xODIuMTAxLjExMyJdLAogICAgICAgICJwYXRoIjogIi9hdXRoL3YxL09QVHJlcSIsCiAgICAgICAgImhlYWRlcnMiOiB7CiAgICAgICAgICAiSG9zdCI6IFsiOTQuMTgyLjEwMS4xMTMiXQogICAgICAgIH0sCiAgICAgICAgIm1ldGhvZCI6ICJQVVQiCiAgICAgIH0KICAgIH0sCiAgICB7CiAgICAgICJ0eXBlIjogInZsZXNzIiwKICAgICAgInRhZyI6ICI0MDQtMSIsCiAgICAgICJzZXJ2ZXIiOiAiNDA0LnRlYW0iLAogICAgICAic2VydmVyX3BvcnQiOiA0MDQsCiAgICAgICJ1dWlkIjogIjIzMWZiZGZjLWNjMzAtNDc3ZS05OWI1LTgzM2U2OWNhNjM3MyIsCiAgICAgICJmbG93IjogIiIsCiAgICAgICJwYWNrZXRfZW5jb2RpbmciOiAieHVkcCIsCiAgICAgICJ0bHMiOiB7CiAgICAgICAgImVuYWJsZWQiOiBmYWxzZQogICAgICB9LAogICAgICAidHJhbnNwb3J0IjogewogICAgICAgICJ0eXBlIjogIndzIiwKICAgICAgICAicGF0aCI6ICIvIiwKICAgICAgICAiaGVhZGVycyI6IHsKICAgICAgICAgICJIb3N0IjogIjQwNC50ZWFtIgogICAgICAgIH0sCiAgICAgICAgIm1heF9lYXJseV9kYXRhIjogMjA0OCwKICAgICAgICAiZWFybHlfZGF0YV9oZWFkZXJfbmFtZSI6ICJTZWMtV2ViU29ja2V0LVByb3RvY29sIgogICAgICB9CiAgICB9LAogICAgewogICAgICAidHlwZSI6ICJ2bGVzcyIsCiAgICAgICJ0YWciOiAiSVJBTi0yIiwKICAgICAgInNlcnZlciI6ICI5NC4xODIuMTAxLjExMyIsCiAgICAgICJzZXJ2ZXJfcG9ydCI6IDg0NDMsCiAgICAgICJ1dWlkIjogIjIzMWZiZGZjLWNjMzAtNDc3ZS05OWI1LTgzM2U2OWNhNjM3MyIsCiAgICAgICJmbG93IjogIiIsCiAgICAgICJwYWNrZXRfZW5jb2RpbmciOiAieHVkcCIsCiAgICAgICJ0bHMiOiB7CiAgICAgICAgImVuYWJsZWQiOiBmYWxzZQogICAgICB9LAogICAgICAidHJhbnNwb3J0IjogewogICAgICAgICJ0eXBlIjogImh0dHAiLAogICAgICAgICJob3N0IjogWyI5NC4xODIuMTAxLjExMyJdLAogICAgICAgICJwYXRoIjogIi9hdXRoL3YxL09QVHJlcSIsCiAgICAgICAgImhlYWRlcnMiOiB7CiAgICAgICAgICAiSG9zdCI6IFsiOTQuMTgyLjEwMS4xMTMiXQogICAgICAgIH0sCiAgICAgICAgIm1ldGhvZCI6ICJQVVQiCiAgICAgIH0KICAgIH0sCiAgICB7CiAgICAgICJ0eXBlIjogInZsZXNzIiwKICAgICAgInRhZyI6ICI0MDQtMiIsCiAgICAgICJzZXJ2ZXIiOiAiNDA0LnRlYW0iLAogICAgICAic2VydmVyX3BvcnQiOiA0MDQsCiAgICAgICJ1dWlkIjogIjlmYTZiZDZjLTZjMTAtNDY0OC1iMzJiLWY5NWE3YzBkYjg1NSIsCiAgICAgICJmbG93IjogIiIsCiAgICAgICJwYWNrZXRfZW5jb2RpbmciOiAieHVkcCIsCiAgICAgICJ0bHMiOiB7CiAgICAgICAgImVuYWJsZWQiOiBmYWxzZQogICAgICB9LAogICAgICAidHJhbnNwb3J0IjogewogICAgICAgICJ0eXBlIjogIndzIiwKICAgICAgICAicGF0aCI6ICIvIiwKICAgICAgICAiaGVhZGVycyI6IHsKICAgICAgICAgICJIb3N0IjogIjQwNC50ZWFtIgogICAgICAgIH0sCiAgICAgICAgIm1heF9lYXJseV9kYXRhIjogMjA0OCwKICAgICAgICAiZWFybHlfZGF0YV9oZWFkZXJfbmFtZSI6ICJTZWMtV2ViU29ja2V0LVByb3RvY29sIgogICAgICB9CiAgICB9LAogICAgewogICAgICAidHlwZSI6ICJ2bGVzcyIsCiAgICAgICJ0YWciOiAiSVJBTi0zIiwKICAgICAgInNlcnZlciI6ICI5NC4xODIuMTAxLjExMyIsCiAgICAgICJzZXJ2ZXJfcG9ydCI6IDg0NDMsCiAgICAgICJ1dWlkIjogIjlmYTZiZDZjLTZjMTAtNDY0OC1iMzJiLWY5NWE3YzBkYjg1NSIsCiAgICAgICJmbG93IjogIiIsCiAgICAgICJwYWNrZXRfZW5jb2RpbmciOiAieHVkcCIsCiAgICAgICJ0bHMiOiB7CiAgICAgICAgImVuYWJsZWQiOiBmYWxzZQogICAgICB9LAogICAgICAidHJhbnNwb3J0IjogewogICAgICAgICJ0eXBlIjogImh0dHAiLAogICAgICAgICJob3N0IjogWyI5NC4xODIuMTAxLjExMyJdLAogICAgICAgICJwYXRoIjogIi9hdXRoL3YxL09QVHJlcSIsCiAgICAgICAgImhlYWRlcnMiOiB7CiAgICAgICAgICAiSG9zdCI6IFsiOTQuMTgyLjEwMS4xMTMiXQogICAgICAgIH0sCiAgICAgICAgIm1ldGhvZCI6ICJQVVQiCiAgICAgIH0KICAgIH0sCiAgICB7CiAgICAgICJ0eXBlIjogInZsZXNzIiwKICAgICAgInRhZyI6ICI0MDQtMyIsCiAgICAgICJzZXJ2ZXIiOiAiNDA0LnRlYW0iLAogICAgICAic2VydmVyX3BvcnQiOiA0MDQsCiAgICAgICJ1dWlkIjogIjdlMTIyM2VlLTg0NmQtNDhhMy1hZGQ1LTc2NTNiYzUzNTViNyIsCiAgICAgICJmbG93IjogIiIsCiAgICAgICJwYWNrZXRfZW5jb2RpbmciOiAieHVkcCIsCiAgICAgICJ0bHMiOiB7CiAgICAgICAgImVuYWJsZWQiOiBmYWxzZQogICAgICB9LAogICAgICAidHJhbnNwb3J0IjogewogICAgICAgICJ0eXBlIjogIndzIiwKICAgICAgICAicGF0aCI6ICIvIiwKICAgICAgICAiaGVhZGVycyI6IHsKICAgICAgICAgICJIb3N0IjogIjQwNC50ZWFtIgogICAgICAgIH0sCiAgICAgICAgIm1heF9lYXJseV9kYXRhIjogMjA0OCwKICAgICAgICAiZWFybHlfZGF0YV9oZWFkZXJfbmFtZSI6ICJTZWMtV2ViU29ja2V0LVByb3RvY29sIgogICAgICB9CiAgICB9LAogICAgewogICAgICAidHlwZSI6ICJ2bGVzcyIsCiAgICAgICJ0YWciOiAiSVJBTi00IiwKICAgICAgInNlcnZlciI6ICI5NC4xODIuMTAxLjExMyIsCiAgICAgICJzZXJ2ZXJfcG9ydCI6IDg0NDMsCiAgICAgICJ1dWlkIjogIjdlMTIyM2VlLTg0NmQtNDhhMy1hZGQ1LTc2NTNiYzUzNTViNyIsCiAgICAgICJmbG93IjogIiIsCiAgICAgICJwYWNrZXRfZW5jb2RpbmciOiAieHVkcCIsCiAgICAgICJ0bHMiOiB7CiAgICAgICAgImVuYWJsZWQiOiBmYWxzZQogICAgICB9LAogICAgICAidHJhbnNwb3J0IjogewogICAgICAgICJ0eXBlIjogImh0dHAiLAogICAgICAgICJob3N0IjogWyI5NC4xODIuMTAxLjExMyJdLAogICAgICAgICJwYXRoIjogIi9hdXRoL3YxL09QVHJlcSIsCiAgICAgICAgImhlYWRlcnMiOiB7CiAgICAgICAgICAiSG9zdCI6IFsiOTQuMTgyLjEwMS4xMTMiXQogICAgICAgIH0sCiAgICAgICAgIm1ldGhvZCI6ICJQVVQiCiAgICAgIH0KICAgIH0sCiAgICB7CiAgICAgICJ0eXBlIjogImRpcmVjdCIsCiAgICAgICJ0YWciOiAiZGlyZWN0IgogICAgfSwKICAgIHsKICAgICAgInR5cGUiOiAiYmxvY2siLAogICAgICAidGFnIjogImJsb2NrIgogICAgfSwKICAgIHsKICAgICAgInR5cGUiOiAiZG5zIiwKICAgICAgInRhZyI6ICJkbnMtb3V0IgogICAgfQogIF0sCiAgInJvdXRlIjogewogICAgInJ1bGVzIjogWwogICAgICB7CiAgICAgICAgInByb3RvY29sIjogImRucyIsCiAgICAgICAgIm91dGJvdW5kIjogImRucy1vdXQiCiAgICAgIH0sCiAgICAgIHsKICAgICAgICAiZ2VvaXAiOiBbInByaXZhdGUiLCAiY24iXSwKICAgICAgICAib3V0Ym91bmQiOiAiZGlyZWN0IgogICAgICB9LAogICAgICB7CiAgICAgICAgImdlb3NpdGUiOiBbImNhdGVnb3J5LWFkcy1hbGwiXSwKICAgICAgICAib3V0Ym91bmQiOiAiYmxvY2siCiAgICAgIH0KICAgIF0sCiAgICAiYXV0b19kZXRlY3RfaW50ZXJmYWNlIjogdHJ1ZSwKICAgICJmaW5hbCI6ICJJUkFOLTEiCiAgfSwKICAiZXhwZXJpbWVudGFsIjogewogICAgImNsYWNoX2ZpcmV3YWxsIjogIm9mZiIKICB9Cn0=
+{
+  "version": "1.8.0",
+  "log": {
+    "level": "info",
+    "timestamp": true
+  },
+  "dns": {
+    "servers": [
+      {
+        "tag": "cloudflare",
+        "address": "https://1.1.1.1/dns-query"
+      },
+      {
+        "tag": "google",
+        "address": "https://8.8.8.8/dns-query"
+      },
+      {
+        "tag": "local",
+        "address": "223.5.5.5",
+        "detour": "direct"
+      }
+    ],
+    "rules": [
+      {
+        "outbound": "any",
+        "server": "local"
+      }
+    ],
+    "strategy": "prefer_ipv4"
+  },
+  "inbounds": [
+    {
+      "type": "tun",
+      "tag": "tun-in",
+      "interface_name": "tun0",
+      "inet4_address": "172.19.0.1/30",
+      "auto_route": true,
+      "strict_route": true,
+      "stack": "system",
+      "sniff": true,
+      "sniff_override_destination": true
+    },
+    {
+      "type": "mixed",
+      "tag": "mixed-in",
+      "listen": "127.0.0.1",
+      "listen_port": 1080,
+      "sniff": true,
+      "sniff_override_destination": true
+    }
+  ],
+  "outbounds": [
+    {
+      "type": "vless",
+      "tag": "IRAN-1",
+      "server": "94.182.101.113",
+      "server_port": 8443,
+      "uuid": "b2a32f46-2b6a-4d1b-bad0-9b1c5c0dcb61",
+      "flow": "",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": false
+      },
+      "transport": {
+        "type": "http",
+        "host": ["94.182.101.113"],
+        "path": "/auth/v1/OPTreq",
+        "headers": {
+          "Host": ["94.182.101.113"]
+        },
+        "method": "PUT"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "404-1",
+      "server": "404.team",
+      "server_port": 404,
+      "uuid": "231fbdfc-cc30-477e-99b5-833e69ca6373",
+      "flow": "",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "404.team"
+        },
+        "max_early_data": 2048,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "404-2",
+      "server": "404.team",
+      "server_port": 404,
+      "uuid": "231fbdfc-cc30-477e-99b5-833e69ca6373",
+      "flow": "",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "404.team"
+        },
+        "max_early_data": 2048,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "IRAN-2",
+      "server": "94.182.101.113",
+      "server_port": 8443,
+      "uuid": "231fbdfc-cc30-477e-99b5-833e69ca6373",
+      "flow": "",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": false
+      },
+      "transport": {
+        "type": "http",
+        "host": ["94.182.101.113"],
+        "path": "/auth/v1/OPTreq",
+        "headers": {
+          "Host": ["94.182.101.113"]
+        },
+        "method": "PUT"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "404-3",
+      "server": "404.team",
+      "server_port": 404,
+      "uuid": "9fa6bd6c-6c10-4648-b32b-f95a7c0db855",
+      "flow": "",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "404.team"
+        },
+        "max_early_data": 2048,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "IRAN-3",
+      "server": "94.182.101.113",
+      "server_port": 8443,
+      "uuid": "9fa6bd6c-6c10-4648-b32b-f95a7c0db855",
+      "flow": "",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": false
+      },
+      "transport": {
+        "type": "http",
+        "host": ["94.182.101.113"],
+        "path": "/auth/v1/OPTreq",
+        "headers": {
+          "Host": ["94.182.101.113"]
+        },
+        "method": "PUT"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "404-4",
+      "server": "404.team",
+      "server_port": 404,
+      "uuid": "7e1223ee-846d-48a3-add5-7653bc5355b7",
+      "flow": "",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "404.team"
+        },
+        "max_early_data": 2048,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "IRAN-4",
+      "server": "94.182.101.113",
+      "server_port": 8443,
+      "uuid": "7e1223ee-846d-48a3-add5-7653bc5355b7",
+      "flow": "",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": false
+      },
+      "transport": {
+        "type": "http",
+        "host": ["94.182.101.113"],
+        "path": "/auth/v1/OPTreq",
+        "headers": {
+          "Host": ["94.182.101.113"]
+        },
+        "method": "PUT"
+      }
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    },
+    {
+      "type": "dns",
+      "tag": "dns-out"
+    }
+  ],
+  "route": {
+    "rules": [
+      {
+        "protocol": "dns",
+        "outbound": "dns-out"
+      },
+      {
+        "geoip": ["private", "cn"],
+        "outbound": "direct"
+      },
+      {
+        "geosite": ["category-ads-all"],
+        "outbound": "block"
+      }
+    ],
+    "auto_detect_interface": true,
+    "final": "IRAN-1"
+  }
+}
